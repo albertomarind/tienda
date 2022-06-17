@@ -1,1 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+:root{
+    --theme-primary-color:#0772b3;
+    --theme-secondary-color:#323536;
+    --theme-default-color:white;
+}
+
+body {
+    margin:0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #eef1f4;
+}

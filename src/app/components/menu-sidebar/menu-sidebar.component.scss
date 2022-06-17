@@ -1,0 +1,50 @@
+.menu-sidebar {
+    background-color: #3c4962;
+    width: 180px;
+    padding: 20px 0 20px 12px;
+    .menu-container-section {
+        margin: 0;
+        padding: 0;
+        .menu-section {
+            list-style: none;
+            margin-bottom: 24px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+            span {
+                color: #cdd2db;
+                font-size: 12px;
+            }
+
+            .menu-container-item {
+                margin: 0 0 0 12px;
+                padding: 0;
+                .menu-item {
+                    padding: 4px 10px;
+                    list-style: none;
+                    border-top-left-radius: 16px;
+                    border-bottom-left-radius: 16px;
+                    margin: 4px 0;
+
+                    &:hover {
+                        background-color: #59667d;
+                    }
+
+                    a {
+                        color: #e5e8ec;
+                        font-size: 13px;
+                    }
+
+                    ::ng-deep{
+                        fa-icon svg{
+                            color:white;
+                        }
+                    }
+                    fa-icon + a {
+                        margin-left:12px;
+                    }
+                }
+            }
+        }
+    }
+}

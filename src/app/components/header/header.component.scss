@@ -1,0 +1,29 @@
+
+.header {
+    padding:12px 16px;
+    background-color: var(--theme-primary-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+	.header-logo { 
+
+		img { 
+
+		}
+	}
+
+	.header-user { 
+
+        app-profile-avatar {
+            --profile-avatar-color-text:white;
+        }
+        // ::ng-deep app-profile-avatar{
+        //     .profile-name, .profile-level{
+        //         color:white;
+        //     }
+        // }
+
+	}
+}
+
+

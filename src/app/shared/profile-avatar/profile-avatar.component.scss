@@ -1,0 +1,39 @@
+:host{
+    --profile-avatar-color-text: black;
+}
+
+.profile-avatar {
+    display: inline-grid;
+    grid-template-areas:
+        "image name"
+        "image level";
+    align-items: center;
+    column-gap: 8px;
+
+    .profile-image {
+        grid-area: image;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        border: 1px solid var(--theme-default-color);
+        img {
+            width: 100%;
+        }
+    }
+
+    .profile-name {
+        grid-area: name;
+        font-size: 14px;
+        color:var(--profile-avatar-color-text);
+    }
+
+    .profile-level {
+        grid-area: level;
+        font-size: 12px;
+        color:var(--profile-avatar-color-text);
+    }
+}
